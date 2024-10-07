@@ -113,4 +113,16 @@ configuration_options =
         },
         default = 0
     },
+    {
+        name = "Default Zoom",
+		hover = "The default zoom minimap loads with",
+        options =
+        {
+            {description = "0", data = 1},
+            {description = "+1", data = 1.5},
+            {description = "+2", data = 1.75},
+            {description = "+3", data = 1.875},
+        },
+        default = 1
+    },
 }
