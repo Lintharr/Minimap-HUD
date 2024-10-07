@@ -44,7 +44,8 @@ local MiniMapWidget = Class(Widget, function(self, mapscale, ultrawide)
 	self.mapscreenzoom = 1
 	self.minimapzoom = 0
 	self.lastpos = nil
-	self.uvscale = 1
+	self.uvscale = GetModConfigData("Default Zoom")	
+	self.img:SetUVScale(self.uvscale, self.uvscale)
     
 	--self.minimap:ResetOffset()	
 	self:StartUpdating()
